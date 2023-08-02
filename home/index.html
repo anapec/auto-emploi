@@ -18,33 +18,12 @@
     <body class="dark-theme">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
-   <script>
-        function accessHomePage() {
-            // Remplacez le mot de passe par le mot de passe haché
-            const secretTokenHashed = 'eb5a829ee16be39ed4d4886811718d8d0506345f016716674a9a604d8f225d17'; // Remplacez cela par le hachage de votre mot de passe secret
-
-            const enteredToken = prompt('Entrez le mot de passe ou le token pour accéder à la page d\'accueil:');
-
-            // Hacher le mot de passe entré par l'utilisateur avec SHA-256
-            const enteredTokenHashed = sha256(enteredToken);
-
-            if (enteredTokenHashed === secretTokenHashed) {
-                // Afficher le contenu principal si le mot de passe est correct
-                document.getElementById('mainContent').style.display = 'block';
-            } else {
-                // Afficher un message si le mot de passe est incorrect
-                alert('Mot de passe ou token incorrect. Vous ne pouvez pas accéder à la page d\'accueil.');
-            }
-        }
-
-        // Exécuter la fonction accessHomePage automatiquement au chargement de la page
-        document.addEventListener('DOMContentLoaded', accessHomePage);
-    </script>
+ >
 
 
 
         <!--==================== HEADER ====================-->
-    <div id="mainContent" style="display: none;">
+    
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
